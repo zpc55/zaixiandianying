@@ -1,0 +1,21 @@
+/* pages/dete/dete.wxss */
+#myVideo{
+  width:100%
+}
+.box{
+    display:flex;
+  margin-top:20rpx;
+}
+.an{
+  font-size:30rpx;
+  flex-grow:1;
+  height:70rpx;
+}
+.biao{
+  border:1px solid blueviolet;
+  height:70rpx;
+  flex-grow:2;
+}
+.zhaopian{
+  border:1px solid green
+}

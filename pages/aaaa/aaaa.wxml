@@ -1,0 +1,19 @@
+<!--index.wxml-->
+
+<view wx:if="{{canIUse}}">
+ <view class='header'>
+ <image class="avatar" src="../../images/avatar/1.png" hidden='{{motto}}'></image>
+  <image wx:if="{{userInfo.avatarUrl}}" src='{{userInfo.avatarUrl}}' class="userinfo-avatar" bindtap="bindViewTap"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+ </view>
+  
+ <view class='content'>
+  <view>申请获取以下权限</view>
+  <text>获得你的公开信息(昵称，头像等)</text>
+ </view>
+  
+ <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权获取头像昵称 </button>
+</view>
+  
+<view wx:else>请升级微信版本</view>
+

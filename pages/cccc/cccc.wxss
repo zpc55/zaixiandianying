@@ -1,0 +1,5 @@
+/* pages/cccc/cccc.wxss */
+#ofoMap{
+  height:500rpx;
+  width:100%;
+}
